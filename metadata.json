@@ -1,0 +1,6 @@
+{
+  "name": "AccessMate AI — Accessibility Copilot",
+  "description": "Intelligent accessibility copilot that turns complex visual documents, notices, and forms into simple, multilingual, step-by-step actionable instructions with human-in-the-loop approval.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

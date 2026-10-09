@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-dyslexic: 'Lexend', sans-serif;
+    --font-hyperlegible: 'Atkinson Hyperlegible', sans-serif;
+    --font-default: 'Inter', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-hyperlegible);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Accessibility Modes */
+body.font-dyslexic {
+  font-family: var(--font-dyslexic) !important;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
+  line-height: 1.8;
+}
+
+body.theme-high-contrast {
+  --bg-primary: #000000;
+  --text-primary: #ffffff;
+  --border-primary: #ffff00;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+body.theme-yellow-contrast {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+}
+
+body.theme-cream {
+  background-color: #fbf7ee !important;
+  color: #1f2937 !important;
+}
+
+/* Magnifier lens transition */
+.magnifier-lens {
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.8), 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+}
+
+/* Focus styles for keyboard accessibility */
+*:focus-visible {
+  outline: 3px solid #6366f1 !important;
+  outline-offset: 3px !important;
+}
